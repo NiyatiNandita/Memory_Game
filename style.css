@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(208, 227, 255);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blur {
+  filter: blur(10px);
+}
+h1 {
+  font-size: 30px;
+  margin: 10px;
+}
+/* #start {
+  width: 20%;
+  padding: 10px;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: pink;
+} */
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+button {
+  width: 200px;
+  padding: 10px;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: pink;
+}
+#first-line {
+  width: 45%;
+  height: 5%;
+  /* background-color: rgb(177, 202, 239); */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#grid {
+  /* background-color: blue; */
+  width: 35%;
+  height: 50%;
+  margin: auto;
+  /* position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.win-or-lost {
+  width: 40%;
+  height: 50%;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgb(177, 202, 239);
+  border-radius: 10px;
+  border: 3px solid black;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: -350px;
+}
+#lost {
+  display: none;
+}
+#won {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    /* padding: 10px; */
+    text-align: center;
+  }
+  button {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  #first-line {
+    width: 100%;
+    padding: 10px;
+    margin-top: 120px;
+  }
+  #grid {
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    /* margin-left: 9px; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  .win-or-lost {
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+    top: -380px;
+    font-size: 21px;
+  }
+}
